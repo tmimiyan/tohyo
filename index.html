@@ -90,7 +90,10 @@ document.getElementById('kaku').style.display = 'none';
 document.getElementById('main').style.display = 'none';
 document.getElementById('mains').style.display = 'block';
 document.getElementById('btn3').style.display = 'block';
-  alert('すでに投票済みです');
+　const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+　await _sleep(2000);
+masks.classList.remove('hidden');
+modals.classList.remove('hidden');
 } else {
 document.getElementById('kaku').style.display = 'block';
 document.getElementById('mains').style.display = 'none';
