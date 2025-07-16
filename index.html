@@ -82,8 +82,8 @@
 
 <!--投票可・不可切り替え-->
 <script>
-  //maske.classList.remove('hidden');
-  //modale.classList.remove('hidden');
+  maske.classList.remove('hidden');
+  modale.classList.remove('hidden');
 </script>
 
 
@@ -124,6 +124,10 @@ mask.addEventListener('click', () => {
 masks.addEventListener('click', () => {
   masks.classList.add('hidden');
   modals.classList.add('hidden');
+});
+
+maske.addEventListener('click', () => {
+  window.location.reload(true);
 });
 </script>
 
