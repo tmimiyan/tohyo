@@ -127,8 +127,12 @@ masks.addEventListener('click', () => {
 
 <script>
   window.onload = function() {
-    window.location.reload();
-    window.onload = null; // 二度と実行されないようにnullを代入
+    if (window.name != "any") {
+        location.reload();
+        window.name = "any";
+    } else {
+        window.name = "";
+    }
   };
 </script>
 
