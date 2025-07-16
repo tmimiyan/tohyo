@@ -132,7 +132,10 @@ maske.addEventListener('click', () => {
 </script>
 
 <script>
-   window.location.reload(true);
+  window.onload = function() {
+    window.location.reload();
+    window.onload = null; // 二度と実行されないようにnullを代入
+  };
 </script>
 
 </body>
